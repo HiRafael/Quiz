@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon_io/favicon-32x32.png">
+</head>
+<body onload="getResult()">
+    <div class="result_box flex-center flex-column">
+        <h1 id="finalText">Score</h1>
+        <h2 id="finalScore"></h2>
+        <form class="end-form-container" method="get" action="rank.php">
+            <h2 id="end-text">Enter your name below to save your score!</h2>
+            <input type="text" name="name" id="username" placeholder="Enter your name">
+            <button class="btn-result" id="saveScoreBtn" type="submit">Save</button>
+        </form>
+        <a class="go-home-btn" href="index.html">Go to Home</a>
+    </div>
+<script src="script.js"></script>
+    
+    
+</body>
+</html>
